@@ -1,0 +1,67 @@
+[
+  {
+    "id": "cuvee",
+    "naziv": "Cuvée",
+    "tip": "Crveno vino",
+    "cena": 1100,
+    "valuta": "RSD",
+    "pakovanje": 6,
+    "jedinica": "po boci · pakovanje 6 kom",
+    "sorta": "67% Cabernet Sauvignon, 33% Merlot",
+    "opis": "Kupaž nastao spajanjem 67% Cabernet Sauvignona i 33% Merloa. Vino punog ukusa, sa izbalansiranim kiselinama i taninima – snažno, slojevito i harmonično.",
+    "slika": "images/Cuvee-1000x1000-1-600x600.webp",
+    "boja": "#b2936d"
+  },
+  {
+    "id": "rose-porta",
+    "naziv": "Rose Porta",
+    "tip": "Roze vino",
+    "cena": 850,
+    "valuta": "RSD",
+    "pakovanje": 6,
+    "jedinica": "po boci · pakovanje 6 kom",
+    "sorta": "100% Merlot",
+    "opis": "Polusuvo sortno vino, 100% Merlot, 12% alkohola i 6g rezidualnog šećera. Srednje intenzivne, kristalno čiste boje – izvanredno roze vino balansiranog ukusa, sa aromama jagode i ruže.",
+    "slika": "images/Rose-1000x1000-1.webp",
+    "boja": "#b2936d"
+  },
+  {
+    "id": "merlot",
+    "naziv": "Merlot",
+    "tip": "Crveno vino",
+    "cena": 1100,
+    "valuta": "RSD",
+    "pakovanje": 6,
+    "jedinica": "po boci · pakovanje 6 kom",
+    "sorta": "100% Merlot",
+    "opis": "Porta Merlot – crveno vino delikatnog karaktera čija raskošna aroma izaziva čula. Naš prestižni proizvod koji pokazuje kompleksnost i karakter u svakoj čaši.",
+    "slika": "images/Merlot-1000.webp",
+    "boja": "#2c3136"
+  },
+  {
+    "id": "chardonnay",
+    "naziv": "Chardonnay",
+    "tip": "Belo vino",
+    "cena": 850,
+    "valuta": "RSD",
+    "pakovanje": 6,
+    "jedinica": "po boci · pakovanje 6 kom",
+    "sorta": "100% Chardonnay",
+    "opis": "Svetložute boje sa zelenkastim odsjajem, Chardonnay spaja diskretne ukuse jabuke, dinje i ananasa uz skladan odnos alkohola i kiselina. Odlično uz predjela, belo meso, ribu, plodove mora, testenine, picu, sireve i dezerte.",
+    "slika": "images/Chardonnay-1000x1000-1.webp",
+    "boja": "#b2936d"
+  },
+  {
+    "id": "sauvignon-blanc",
+    "naziv": "Sauvignon Blanc",
+    "tip": "Belo vino",
+    "cena": 850,
+    "valuta": "RSD",
+    "pakovanje": 6,
+    "jedinica": "po boci · pakovanje 6 kom",
+    "sorta": "100% Sauvignon Blanc",
+    "opis": "Sofisticirano belo vino intenzivnog ukusa, od sitnih, zbijenih grozdova izduženih, providnih bobica. Sorta koja daje punu jačinu ukusa, boje i bukea.",
+    "slika": "images/Sauvignon-1000x1000-1.webp",
+    "boja": "#b2936d"
+  }
+]
