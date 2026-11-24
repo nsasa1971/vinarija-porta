@@ -97,6 +97,6 @@ Svaka stranica ima `<title>`, `meta description`, `og:title/description/image/ur
 
 - Adresa: Selo Rečka, Negotin
 - Telefon: +381 65 326 87 22
-- Email: stevica.inovacije@gmail.com
+- Email: info@vinarijaporta.rs
 
 Po potrebi izmenite broj za WhatsApp rezervni kanal u `js/main.js` (promenljiva `WHATSAPP_NUMBER`).

@@ -4,7 +4,7 @@
  */
 (function () {
   var WHATSAPP_NUMBER = "381653268722"; /* +381 65 326 87 22, bez + i razmaka */
-  var CONTACT_EMAIL = "stevica.inovacije@gmail.com";
+  var CONTACT_EMAIL = "info@vinarijaporta.rs";
 
   /* ---------- Mobilna navigacija ---------- */
   document.addEventListener("DOMContentLoaded", function () {
