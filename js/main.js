@@ -1,10 +1,9 @@
 /*
  * Vinarija Porta — opšti UI: navigacija, učitavanje vina iz products.json,
- * FAQ akordeon i slanje forme za upit (Netlify Forms + mailto/WhatsApp rezerva).
+ * FAQ akordeon i slanje forme za upit (Netlify Forms + WhatsApp rezerva).
  */
 (function () {
   var WHATSAPP_NUMBER = "381653268722"; /* +381 65 326 87 22, bez + i razmaka */
-  var CONTACT_EMAIL = "info@vinarijaporta.rs";
 
   /* ---------- Mobilna navigacija ---------- */
   document.addEventListener("DOMContentLoaded", function () {
@@ -258,6 +257,7 @@
     if (!form) return;
 
     var successBox = document.getElementById("formSuccess");
+    var errorBox = document.getElementById("formError");
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -269,22 +269,34 @@
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString()
       })
-        .then(function () { handleSuccess(); })
-        .catch(function () {
-          /* Netlify nije dostupan (npr. lokalni preview) — ipak prikaži uspeh
-             i ponudi email/WhatsApp kao rezervni kanal ispod. */
+        .then(function (res) {
+          if (!res.ok) throw new Error("HTTP " + res.status);
           handleSuccess();
-        });
+        })
+        .catch(function () { handleError(); });
     });
 
-    function handleSuccess() {
-      if (successBox) successBox.classList.add("show");
-      form.reset();
-      PortaCart.clearCart();
-      form.scrollIntoView({ behavior: "smooth", block: "start" });
+    function showMessage(box, other) {
+      if (other) other.classList.remove("show");
+      if (!box) return;
+      box.classList.add("show");
+      /* sačekaj da se raspored stabilizuje (korpa se osvežava), pa skroluj i fokusiraj */
+      window.requestAnimationFrame(function () {
+        box.scrollIntoView({ behavior: "smooth", block: "center" });
+        try { box.focus({ preventScroll: true }); } catch (err) { box.focus(); }
+      });
     }
 
-    var mailBtn = document.getElementById("sendMailFallback");
+    function handleSuccess() {
+      form.reset();
+      PortaCart.clearCart();
+      showMessage(successBox, errorBox);
+    }
+
+    function handleError() {
+      showMessage(errorBox, successBox);
+    }
+
     var waBtn = document.getElementById("sendWhatsappFallback");
 
     function buildMessage() {
@@ -306,12 +318,6 @@
       );
     }
 
-    if (mailBtn) {
-      mailBtn.addEventListener("click", function () {
-        var body = encodeURIComponent(buildMessage());
-        window.location.href = "mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent("Upit za narudžbinu - Vinarija Porta") + "&body=" + body;
-      });
-    }
     if (waBtn) {
       waBtn.addEventListener("click", function () {
         var text = encodeURIComponent(buildMessage());

@@ -1033,6 +1033,19 @@ blockquote{
   font-weight: 500;
 }
 .form-success.show{ display:block; }
+.form-error{
+  display:none;
+  background: rgba(160,40,40,0.08);
+  border: 1px solid #a02828;
+  color: var(--dark);
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.form-error.show{ display:block; }
+.form-error a, .form-note a{ color: inherit; text-decoration: underline; }
+.form-success:focus, .form-error:focus{ outline: 2px solid var(--beige); outline-offset: 2px; }
 .form-alt-channels{ display:flex; gap: 14px; margin-top: 18px; }
 .form-alt-channels .btn{ flex: 1 1 0; min-width: 0; text-align:center; white-space:nowrap; }
 @media (max-width: 480px){

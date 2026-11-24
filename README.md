@@ -32,7 +32,7 @@ robots.txt, sitemap.xml   Osnovni SEO fajlovi
 - Ikonica "Upit" u headeru otvara panel sa pregledom, izmenom količina i uklanjanjem stavki.
 - Na stranici **Kontakt** (`#narudzbina`) prikazuje se pregled izabranih vina, a forma traži podatke firme (naziv, PIB/matični broj, kontakt osoba, telefon, email, adresa isporuke, napomena).
 - Slanjem forme, podaci + spisak vina odlaze na email preko **Netlify Forms**. Nema checkout-a niti plaćanja online — narudžbina se dalje obrađuje ručno (ponuda, faktura, dogovor oko isporuke).
-- Ako Netlify Forms iz nekog razloga ne radi (npr. sajt hostovan negde drugde), dostupna su dva rezervna dugmeta: **Pošalji mejlom** (mailto:) i **Pošalji preko WhatsApp-a** (wa.me), koja generišu isti tekst upita.
+- Ako Netlify Forms iz nekog razloga ne radi (npr. sajt hostovan negde drugde), dostupno je rezervno dugme **Pošalji preko WhatsApp-a** (wa.me), koje generiše isti tekst upita. Ako slanje ne uspe, prikazuje se poruka o grešci sa telefonom i e-mail adresom.
 
 ## Izmena vina (bez diranja HTML-a)
 
