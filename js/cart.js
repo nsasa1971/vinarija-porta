@@ -133,7 +133,7 @@
     if (!box) return;
     var items = getCart();
     if (items.length === 0) {
-      box.innerHTML = '<h4>Vaš upit</h4><p class="order-summary-empty">Korpa upita je prazna. Vratite se u <a href="vinoteka.html" style="color:var(--gold-light);text-decoration:underline;">Vinoteku</a> i izaberite vina pre slanja upita, ili opišite željena vina u napomeni ispod.</p>';
+      box.innerHTML = '<h4>Vaš upit</h4><p class="order-summary-empty">Korpa upita je prazna. Vratite se u <a href="/vinoteka" style="color:var(--gold-light);text-decoration:underline;">Vinoteku</a> i izaberite vina pre slanja upita, ili opišite željena vina u napomeni ispod.</p>';
       return;
     }
     var rows = items.map(function (i) {
