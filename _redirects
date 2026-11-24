@@ -15,6 +15,11 @@
 /product/sauvignon-blanc                  /vinoteka               301!
 /product/belo-vino-chardonnay-0187-l      /vinoteka               301!
 
+# Ostalo iz stare WooCommerce strukture (nakon pojedinačnih pravila)
+/product-category/*                       /vinoteka               301!
+/category/*                               /blog                   301!
+/product/*                                /vinoteka               301!
+
 # Blog postovi zadržavaju stare adrese
 /znacaj-terroira                          /blog-znacaj-terroira.html        200
 /magija-crvenog-vina                      /blog-magija-crvenog-vina.html    200

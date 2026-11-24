@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://vinarijaporta.rs/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://vinarijaporta.rs/vinoteka.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://vinarijaporta.rs/vinarija.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://vinarijaporta.rs/faq.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://vinarijaporta.rs/blog.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://vinarijaporta.rs/blog-berba-2025.html</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://vinarijaporta.rs/blog-cuvee-odlezavanje.html</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://vinarijaporta.rs/blog-rose-porta.html</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://vinarijaporta.rs/vinoteka</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vinarijaporta.rs/vinarija</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://vinarijaporta.rs/faq</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://vinarijaporta.rs/blog</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://vinarijaporta.rs/blog-berba-2025</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://vinarijaporta.rs/blog-cuvee-odlezavanje</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://vinarijaporta.rs/blog-rose-porta</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://vinarijaporta.rs/znacaj-terroira</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
   <url><loc>https://vinarijaporta.rs/magija-crvenog-vina</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://vinarijaporta.rs/kontakt.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vinarijaporta.rs/kontakt</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
 </urlset>
