@@ -277,8 +277,9 @@
     });
 
     function showMessage(box, other) {
-      if (other) other.classList.remove("show");
+      if (other) { other.classList.remove("show"); other.hidden = true; }
       if (!box) return;
+      box.hidden = false;
       box.classList.add("show");
       /* sačekaj da se raspored stabilizuje (korpa se osvežava), pa skroluj i fokusiraj */
       window.requestAnimationFrame(function () {
