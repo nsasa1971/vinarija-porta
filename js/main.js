@@ -259,8 +259,29 @@
     var successBox = document.getElementById("formSuccess");
     var errorBox = document.getElementById("formError");
 
+    /* Stroža provera od ugrađene: e-mail mora imati domen sa tačkom (npr. ime@firma.rs) */
+    var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@.]{2,}$/;
+    var PHONE_RE = /^[0-9+()\/\s.\-]{6,}$/;
+    function checkField(name, re, msg) {
+      var el = form.elements[name];
+      if (!el) return true;
+      el.value = el.value.trim();
+      el.setCustomValidity(re.test(el.value) ? "" : msg);
+      if (!el.checkValidity()) { el.reportValidity(); el.focus(); return false; }
+      return true;
+    }
+    function validateContactFields() {
+      return checkField("email", EMAIL_RE, "Unesite ispravnu e-mail adresu, npr. ime@firma.rs") &&
+             checkField("telefon", PHONE_RE, "Unesite ispravan broj telefona, npr. +381 65 123 4567");
+    }
+    ["email", "telefon"].forEach(function (n) {
+      var el = form.elements[n];
+      if (el) el.addEventListener("input", function () { el.setCustomValidity(""); });
+    });
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
+      if (!validateContactFields()) return;
       var formData = new FormData(form);
       formData.set("upit-vina", PortaCart.buildSummaryText());
 
